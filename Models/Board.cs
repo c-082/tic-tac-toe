@@ -10,7 +10,6 @@ internal class Board
         this.botSymbol = botSymbol;
         CreateBoard();
     }
-
     private void CreateBoard()
     {
         for (int i = 0; i < 3; i++)
@@ -75,7 +74,7 @@ internal class Board
         }
         for (int i = 0; i < 3; i++)
         {
-            if (IsWinningLine(cells[0, i], cells[0, 1], cells[0, 2]))
+            if (IsWinningLine(cells[0, i], cells[1, i], cells[2, i]))
             {
                 return cells[0, i] switch
                 {

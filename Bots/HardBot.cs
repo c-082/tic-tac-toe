@@ -27,7 +27,6 @@ internal class HardBot(Board board, char playerSymbol, char botSymbol)
         {
             return Evaluate();
         }
-
         var bestScore = isMaximizing ? int.MinValue : int.MaxValue;
         var symbol = isMaximizing ? botSymbol : playerSymbol;
         var emptyCells = board.GetEmptyCells();

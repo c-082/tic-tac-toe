@@ -43,6 +43,7 @@ void Play()
         _ => throw new InvalidOperationException("Game is still ongoing")
     }}
     """);
+    board.ClearBoard();
     if (AskPlayAgain())
     {
         Play();
